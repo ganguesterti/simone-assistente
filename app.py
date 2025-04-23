@@ -34,7 +34,6 @@ def webhook():
 def health_check():
     return "OK"
 
-@app.route('/saúdez')
-def health_check():
-    return "OK"
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=10000)
 
