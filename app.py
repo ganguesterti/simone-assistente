@@ -32,3 +32,8 @@ def webhook():
 
 if __name__ == "__main__":
     app.run()
+
+@app.route('/saúdez')
+def health_check():
+    return "OK"
+
